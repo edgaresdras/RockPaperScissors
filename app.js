@@ -7,6 +7,17 @@ const result_p = document.querySelector(".result>p");
 const rock_div = document.getElementById("Piedra");
 const paper_div = document.getElementById("Papel");
 const scissors_div = document.getElementById("Tijeras");
+const selectGame = document.getElementById("selectGame");
+
+(function versus() {
+     console.log(selectGame.typeOfGame.value);
+     selectGame.addEventListener('click', () => {
+          gameSelected = selectGame.typeOfGame.value
+          console.log(gameSelected);
+          userScore = 0;
+          computerScore = 0;
+     });
+})();
 
 (function main() {
      rock_div.addEventListener('click', () => game("Piedra"));
