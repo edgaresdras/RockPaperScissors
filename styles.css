@@ -44,7 +44,15 @@ header>p {
      position: relative;
 }
 
-.badge {
+.badge1 {
+     background: #31b43a;
+     color: white;
+     font-size: 14px;
+     padding: 2px 18px;
+     font-family: asap, sans-serif;
+}
+
+.badge2 {
      background: #E2584D;
      color: white;
      font-size: 14px;
@@ -61,7 +69,7 @@ header>p {
 #computer-label {
      position: absolute;
      top: 30px;
-     right: -35px;
+     right: -30px;
 }
 
 .result {
@@ -101,13 +109,21 @@ header>p {
      height: 100%;
 }
 
-#action-message {
+#action-message1,
+#action-message2 {
      text-align: center;
-     color: white;
      font-family: asap, sans-serif;
      font-weight: bold;
      font-size: 20px;
      margin-top: 20px;
+}
+
+#action-message1 {
+     color: #31b43a;
+}
+
+#action-message2 {
+     color: #E2584D;
 }
 
 .green-glow {
@@ -123,4 +139,8 @@ header>p {
 .gray-glow {
      border: 4px solid #464647;
      box-shadow: 0 0 10px #25292b;
+}
+
+.hidden {
+     display: none;
 }
