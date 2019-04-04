@@ -15,7 +15,6 @@ header {
      padding: 20px;
 }
 
-
 header>p {
      color: #24272E;
      text-align: center;
@@ -144,3 +143,26 @@ header>p {
 .hidden {
      display: none;
 }
+
+@media only screen and (max-width: 768px) {
+    header>p {
+        font-size: 1em;
+   }
+   header {
+       padding: 10px;
+   }
+   .score-board {
+    color: white;
+    font-size: 23px;
+    padding: 15px 10px;
+}
+#user-label {
+    top: 20px;
+}
+#computer-label {
+    top: 20px;
+}
+.result {
+    font-size: 20px;
+}
+  }
